@@ -10,7 +10,7 @@ const WithAuth = (WrappedComponent) => {
     const navigate = useNavigate();
 
     const accessToken = isAuthenticated(cookies);
-    console.log(accessToken, "2323");
+    // console.log(accessToken, "2323");
 
     useEffect(() => {
       if (accessToken && WrappedComponent.name === "Login") {
